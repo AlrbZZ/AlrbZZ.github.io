@@ -1,0 +1,54 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('background-nuclear.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.menu button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.seccion {
+    display: none;
+    margin-top: 20px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 80%;
+}
+
+button {
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e68900;
+}

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Núcleo y Reacciones Nucleares</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Núcleo y Reacciones Nucleares</h1>
+        <div class="menu">
+            <button onclick="mostrarSeccion('radio')">Calcular Radio del Núcleo</button>
+            <button onclick="mostrarSeccion('energia-enlace')">Calcular Energía de Enlace</button>
+            <button onclick="mostrarSeccion('energia-liberada')">Simular Energía Liberada</button>
+        </div>
+
+        <div id="radio" class="seccion">
+            <h2>Calcular Radio del Núcleo</h2>
+            <label for="masaAtomica">Número másico (A):</label>
+            <input type="number" id="masaAtomica">
+            <button onclick="calcularRadio()">Calcular</button>
+            <p id="radio-result"></p>
+        </div>
+
+        <div id="energia-enlace" class="seccion">
+            <h2>Calcular Energía de Enlace</h2>
+            <label for="protones">Número de protones (Z):</label>
+            <input type="number" id="protones">
+            <label for="neutrones">Número de neutrones (N):</label>
+            <input type="number" id="neutrones">
+            <label for="masaNucleo">Masa atómica del núcleo (UMA):</label>
+            <input type="number" id="masaNucleo">
+            <button onclick="calcularEnergiaEnlace()">Calcular</button>
+            <p id="energia-enlace-result"></p>
+        </div>
+
+        <div id="energia-liberada" class="seccion">
+            <h2>Simular Energía Liberada</h2>
+            <label for="masaBala">Masa de la bala (UMA):</label>
+            <input type="number" id="masaBala">
+            <label for="masaBlanco">Masa del blanco (UMA):</label>
+            <input type="number" id="masaBlanco">
+            <label for="masaProducto">Masa del producto (UMA):</label>
+            <input type="number" id="masaProducto">
+            <label for="masaNucleoFinal">Masa del nuevo núcleo (UMA):</label>
+            <input type="number" id="masaNucleoFinal">
+            <button onclick="calcularEnergiaLiberada()">Calcular</button>
+            <p id="energia-liberada-result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
